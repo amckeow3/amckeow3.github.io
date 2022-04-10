@@ -1,0 +1,63 @@
+// Codepen spesific styling - only to center the elements in the pen preview and viewport 
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    background: transparent;
+}
+
+.hello-container {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+    padding-right: 4%;
+	max-width: 100%;
+	display: inline flex;
+	align-items: center;
+	justify-content: center;
+}
+
+h1 { 
+    //background-color: mix(#fff, #00fff2, 3%);
+    color: mix(#fff, #1eb0e9, 85%);
+    font-size: 80px;
+    font-family: "lato", sans-serif;
+    font-weight: 100;
+    letter-spacing: .09em;
+    opacity: .9;
+    text-align: center;
+    justify-content: center;
+}
+
+h2 {
+    color: mix(#fff, #1eb0e9, 85%);
+    font-size: 2em;
+    font-family: "lato", sans-serif;
+    font-weight: 100;
+    opacity: .9;
+}
+
+.image {
+    margin-left: -10%;
+    margin-right: 10%;
+}
+
+img {
+    max-width: 15%;
+}
+
+.neon {
+    font-family: "lato", sans-serif;
+    flex: 0 0 100%;
+    padding: 2vw 0;
+    margin: 0;
+    color: transparent;
+    text-align: center; 
+    z-index: 5;
+    -webkit-user-select: none;
+    font-family: "lato", sans-serif;
+    font-size: 1.5em; 
+    text-shadow: 0 0 .1vw #d0f3bc, 0 0 .5vw #2136f1, 0 0 1.5vw #21f1e0;
+}
