@@ -1,0 +1,27 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    background: transparent;
+}
+
+.contact-btn {
+  color: black;
+  font-family: "lato", sans-serif;
+  font-size: 30px;
+  letter-spacing: 10px;
+  font-weight: 400;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  background: #fffb0f;
+  //border: solid 3px #fffb0f;
+  border-radius: 12px;
+  width: 350px;
+  height: 75px;
+  text-decoration: none;
+
+}
