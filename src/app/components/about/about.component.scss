@@ -1,16 +1,18 @@
 @import '../../../styles.scss';
 
 main {
-    display: flex;
-    background-color: $dark-purple;
-    height: 700px;
-    margin-top: 150px;
-    flex-direction: column;
+    display: block;
+    justify-content: center;
+    align-items: center;
     justify-content: center;
     align-items: center;
     max-width: 100%;
     background: transparent;
 }
+
+
+
+/*
 .about-container {
 	top: 0;
 	left: 0;
@@ -22,8 +24,33 @@ main {
 	align-items: center;
 	justify-content: center;
 }
+*/
 
-.neon {
+ .about-container {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+    padding-right: 4%;
+	max-width: 100%;
+	display: inline flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.text-section {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text-container {
+   width: 70%;
+}
+
+.neon-section-headers {
     font-family: "lato", sans-serif;
     flex: 0 0 100%;
     padding: 2vw 0;
@@ -37,42 +64,32 @@ main {
     text-shadow: 0 0 .1vw #d0f3bc, 0 0 .5vw #f970fd, 0 0 1.5vw #f970fd;
 }
 
-h1 {
-  background: none;
-  color: $white;
-  font-family: "lato", sans-serif;
-  font-size: 50px;
-  letter-spacing: 10px;
-  font-weight: 300;
-  opacity: .8;
-}
-
-h1 span {
-  color: $tiffany-blue;
+h1 { 
+    //background-color: mix(#fff, #00fff2, 3%);
+    color: mix(#fff, #fca2ff, 85%);
+    //font-size: 40px;
+    font-size: 2.5em;
+    font-family: "lato", sans-serif;
+    font-weight: 100;
+    letter-spacing: .09em;
+    line-height: 2em;
 }
 
 .about-section {
-  display: block;
+  display: inline;
   justify-content: center;
-  width: 70%;
+  width: 100%;
 }
 
 img {
-  max-width: 30%;
+  max-width: 20%;
 }
-
-.image {
-  width: 11%;
-  height: 32%;
-}
-
 
 .about-text {
   color: $white;
-  font-size: 25px;
+  font-size: 18px;
   font-family: "lato", sans-serif;
   font-weight: 100;
-  opacity: .6;
 }
 
 @media only screen and (max-width: 600px) {

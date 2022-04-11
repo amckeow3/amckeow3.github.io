@@ -5,18 +5,24 @@
   <div id='stars2'></div>
   <div id='stars3'></div>
   <header>
-    <div class="container">
-        <nav>
-            <ul class="nav-link">
-                <li><a class="neon" href="#hero" routerLinkActive="active">Home</a></li>
-                <li><a class="neon" href="#about" routerLinkActive="active">About</a></li>
-                <li><a class="neon" href="#skills" routerLinkActive="active">Skills</a></li>
-                <li><a class="neon" href="#work" routerLinkActive="active">Work</a></li>
-                <li><a class="neon" href="#contact" routerLinkActive="active">Contact</a></li>
-                <li><a class="neon" href="#blog" routerLinkActive="active">Blog</a></li>
+        <nav class="navbar navbar-toggleable-md navbar-light navbar-expand-lg">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-expanded="false" aria-label="Toggle navigation"
+          (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="navbarColor02">
+            <span class="navbar-toggler-icon">
+              <i class="fa fa-navicon" style="color:#fff; font-size:28px;"></i>
+            </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarColor02" [ngbCollapse]="isCollapsed">
+            <ul class="navbar-nav nav-link ms-auto">
+                <li class="nav-item"><a href="#about" routerLinkActive="active">01. About</a></li>
+                <!--<li><a href="#skills" routerLinkActive="active">02. Skills & Tools</a></li>-->
+                <li class="nav-item"><a href="#work" routerLinkActive="active">02. Work</a></li>
+                <li class="nav-item"><a href="#contact" routerLinkActive="active">03. Contact</a></li>
+                <li class="nav-item"><a href="https://adriannamckeown.hashnode.dev/" target="_blank">04. Blog</a></li>
             </ul>
-        </nav>
-    </div>
+          </div>
+      </nav>
 </header>
   <div class="icon-bar">
     <a class="fa fa-github" href="https://github.com/amckeow3" target="_blank"></a>
@@ -24,26 +30,51 @@
     <a class="fa fa-linkedin" href="https://www.linkedin.com/in/adriannamckeown/" target="_blank"></a>
     <a class="fa fa-facebook" href="https://www.facebook.com/adrianna.mckeown.3" target="_blank"></a>
   </div>
+  
   <div class="sections-content">
-    <section class="content" id="home">
-        <app-hero></app-hero>
-    </section>
+
+      <div class="hello">
+      <h1><span class="neon-hello-text" style="color: #1ee9df; font-weight: 100;">Hello,</span>
+        <br>
+        <span style="font-weight: 100; font-size: .3em;">I'M ADRIANNA MCKEOWN</span>
+          <br>
+          <span style="font-weight: 100; font-size: .3em;">& I AM A</span>
+        <br>
+        <span class="neon-hello-text" style="color: #1ee9df; font-weight: 100; font-size: .3em;"> 
+            SOFTWARE ENGINEER.
+        </span>
+      </h1>
+    </div>
     
     <section class="content" id="about">
-        <app-about></app-about>
+      <h2><span class="neon-section-header" style="color: #fca2ff; font-weight: 100; font-size: .9em;">
+        01. ABOUT ME</span>
+      </h2> 
+      <app-about></app-about>
     </section>
     
+    <!--
     <section class="content" id="skills">
-        <h1>Skills</h1>
+      <h2><span class="neon-section-header" style="color: #fca2ff; font-weight: 100; font-size: .9em;">
+        02. Skills & Tools</span>
+      </h2> 
+      <app-skills></app-skills>
     </section>
+  -->
     
     <section class="content" id="work">
-        <h1>Work</h1>
+      <h2><span class="neon-section-header" style="color: #fca2ff; font-weight: 100; font-size: .9em;">
+        02. SOME THINGS I'VE BUILT</span>
+      </h2> 
+      <app-work></app-work>
     </section>
     
     <section class="content" id="contact">
-        <h1>Contact</h1>
+      <h2><span class="neon-section-header" style="color: #fca2ff; font-weight: 100; font-size: .9em;">
+        03. CONTACT ME</span>
+      </h2> 
+      <app-contact></app-contact>
     </section>
-    
+
     </div>
 </main>

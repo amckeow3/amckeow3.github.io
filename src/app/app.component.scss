@@ -1,7 +1,6 @@
 @import '../styles.scss';
 
 main {
-    margin-left: 10%;
     background-color: $dark-purple;
     align-items: center;
     text-align: center;
@@ -68,6 +67,47 @@ main {
   }
 }
 
+header {
+    width: 100%;
+    height: auto;
+    background-color: $dark-purple;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 1px;
+    z-index: 9999;
+}
+
+/* NAVBAR */
+nav {
+    float: right;
+    //background-color: transparent;
+    
+}
+
+.nav-link {
+    list-style: none;
+    //background-color: transparent;
+}
+
+.nav-link li {
+    display: inline-block;
+    //background-color: transparent;
+}
+
+.nav-link li a {
+    display: block;
+    padding: 20px;
+    line-height: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    background-color: transparent;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/* ICON BAR */
 .icon-bar {
   background: transparent;
   position: fixed;
@@ -119,8 +159,101 @@ main {
   flex-direction: column;
 }
 
+
+.sections-content {
+    background-color: transparent;
+}
+
+.content {
+    background: transparent;
+}
+/* HELLO INTRO TEXT */
+
+.hello {
+    padding-top: 9em;
+    padding-left: 12%;
+    padding-right: 15%;
+}
+
+h1 { 
+    //background-color: mix(#fff, #00fff2, 3%);
+    color: mix(#fff, #1eb0e9, 85%);
+    //font-size: 80px;
+    font-size: 8em;
+    font-family: "lato", sans-serif;
+    font-weight: 100;
+    letter-spacing: .09em;
+    text-align: center;
+    justify-content: center;
+    background: transparent;
+    line-height: 0.9;
+}
+
+.neon-hello-text {
+    font-family: "lato", sans-serif;
+    flex: 0 0 100%;
+    padding: 2vw 0;
+    margin: 0;
+    color: transparent;
+    text-align: center; 
+    z-index: 5;
+    -webkit-user-select: none;
+    font-family: "lato", sans-serif;
+    text-shadow: 0 0 .1vw #d0f3bc, 0 0 .5vw #2136f1, 0 0 1.5vw #21f1e0;
+}
+
+
+/* SECTION FORMATTING */
+section {
+    padding-top: 9em;
+    padding-left: 10%;
+    padding-right: 12%;
+}
+
+h2 { 
+    //background-color: mix(#fff, #00fff2, 3%);
+    color: mix(#fff, #fca2ff, 85%);
+    //font-size: 40px;
+    font-size: 3em;
+    font-family: "lato", sans-serif;
+    font-weight: 100;
+    letter-spacing: .09em;
+    line-height: 2em;
+}
+.neon-section-header {
+    font-family: "lato", sans-serif;
+    flex: 0 0 100%;
+    padding: 2vw 0;
+    margin: 0;
+    color: transparent;
+    text-align: center; 
+    z-index: 5;
+    -webkit-user-select: none;
+    font-family: "lato", sans-serif;
+    text-shadow: 0 0 .1vw #d0f3bc, 0 0 .5vw #f970fd, 0 0 1.5vw #f970fd;
+}
+
+
+
 @media only screen and (max-width: 600px) {
   .icon-bar {
     left: 1px;
   }
+
+  .hello {
+    padding-top: 8em;
+    padding-left: 10%;
+    padding-right: 12%;
+}
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar-toggler {
+        //width: 100%;
+        float: none;
+        margin-right: 60px;
+    }
+
 }

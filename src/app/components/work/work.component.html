@@ -1,1 +1,59 @@
-<p>work works!</p>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg">
+<main>
+    
+  <div class="projects">
+    <!--<div class="other-projects-header">Other Noteworthy Projects</div>-->
+
+    <!--Ticket Discount Calculator Project-->
+    <button class="project-folder" id="happlebtn" onclick="document.getElementById('id01').style.display='block'">
+      <div class="other-proj-text">
+        <i class="fa fa-folder-o" aria-hidden="true"></i>
+        <div class="other-proj-name">Forums Android App</div>
+        <table>
+          <tr class="icons-row" style="background: #01011d;">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" alt="Android"/>
+            <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="Firebase" style="margin-left: .1em;"/>
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="Java" style="margin-left: .1em;" />
+          </tr>
+        </table>
+      </div>
+    </button>
+    <div id="id01" class="modal">
+      <div class="modal-content">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+        <ng-image-slider class="image-slider" [images]="forumsAppImages" #nav></ng-image-slider>
+        <div class="modal-content-header">Forums Andorid App</div>
+          <div class="link-section">
+            <a href="https://github.com/amckeow3/firebase-forums-android-app" class="fa fa-github" target="_blank"> GITHUB</a>
+          </div>
+      </div>
+    </div>
+
+    <!--Happle Project-->
+    <button class="project-folder" id="happlebtn" onclick="document.getElementById('id02').style.display='block'">
+      <div class="other-proj-text">
+        <i class="fa fa-folder-o" aria-hidden="true"></i>
+        <div class="other-proj-name">Happle Web App</div>
+        <table>
+            <tr class="icons-row" style="background: #01011d;">
+              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" alt="Android"/>
+              <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="Firebase" style="margin-left: .1em;"/>
+              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="Java" style="margin-left: .1em;" />
+            </tr>
+          </table>
+      </div>
+    </button>
+    <div id="id02" class="modal">
+      <div class="modal-content">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span>
+        <ng-image-slider class="image-slider" [images]="forumsAppImages" #nav></ng-image-slider>
+        <div class="modal-content-header">Happle Web App</div>
+          <div class="link-section">
+            <a href="https://happle.netlify.app/" class="fa fa-external-link" target="_blank"> VIEW SITE</a>
+            <a href="https://github.com/amckeow3/happle" class="fa fa-github" target="_blank"> GITHUB</a>
+          </div>
+      </div>
+    </div>   
+  </div>
+</main>
