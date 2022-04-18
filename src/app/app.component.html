@@ -17,7 +17,7 @@
                 <li class="nav-item"><a href="#work" routerLinkActive="active">Work</a></li>
                 <li class="nav-item"><a href="#contact" routerLinkActive="active">Contact</a></li>
                 <li class="nav-item"><a href="https://adriannamckeown.hashnode.dev/" target="_blank">Blog</a></li>
-                <li class="nav-item"><a href="" target="_blank"><span style="color: #00B564; border: solid #00B564 3px; padding: 4px 4px;">Resume</span></a></li>
+                <li class="nav-item"><a href="" target="_blank"><span style="color: #80F0BE; border: 2px solid #80F0BE; padding: 8px;">Resume</span></a></li>
             </ul>
           </div>
       </nav>
@@ -30,16 +30,18 @@
   </div>
   
   <div class="sections-content">
-
       <div class="hello">
       <h1>Hello, I'm Adrianna.</h1>
         <h2>I'm a <span class="intro-outline">Software Engineer</span></h2>
     </div>
     
     <section class="content" id="about">
-      <h2><span class="neon-section-header" style="color: #fca2ff; font-weight: 100; font-size: .9em;">
-        01. ABOUT ME</span>
-      </h2> 
+      <div class="section-header">
+       ABOUT
+      </div> 
+      <div class="section-subheader">
+        Who Am I?
+      </div>
       <app-about></app-about>
     </section>
     
@@ -52,17 +54,23 @@
     </section>
   -->
     
-    <section class="content" id="work">
-      <h2><span class="neon-section-header" style="color: #fca2ff; font-weight: 100; font-size: .9em;">
-        02. SOME THINGS I'VE BUILT</span>
-      </h2> 
-      <app-work></app-work>
-    </section>
-    
+  <section class="content" id="work">
+    <div class="section-header">
+      WORK
+     </div> 
+     <div class="section-subheader">
+       Some Things I've Built
+     </div>
+    <app-work></app-work>
+  </section>
+
     <section class="content" id="contact">
-      <h2><span class="neon-section-header" style="color: #fca2ff; font-weight: 100; font-size: .9em;">
-        03. CONTACT ME</span>
-      </h2> 
+      <div class="section-header">
+        CONTACT  
+      </div> 
+      <div class="section-subheader">
+         Get In Touch
+      </div>
       <app-contact></app-contact>
     </section>
 

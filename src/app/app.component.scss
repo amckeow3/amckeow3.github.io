@@ -42,9 +42,11 @@ nav {
     text-decoration: none;
     color: white;
     font-size: 1em;
+    font-weight: 100;
     background-color: transparent;
     //font-family: 'Courier New', Courier, monospace;
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
+    //font-family: Consolas;
 }
 
 
@@ -111,7 +113,7 @@ nav {
 /* HELLO INTRO TEXT */
 
 .hello {
-    padding-top: 9em;
+    padding-top: 12em;
     padding-left: 12%;
     padding-right: 15%;
 }
@@ -158,6 +160,24 @@ section {
     padding-top: 9em;
     padding-left: 10%;
     padding-right: 12%;
+}
+
+.section-header {
+  font-family: Raleway;
+  color: white;
+  font-size: 20px;
+  font-weight:800;
+  letter-spacing: .09em;
+  text-align: left;
+}
+
+.section-subheader {
+  font-family: Consolas;
+  color: $mint-green;
+  font-size: 3em;
+  font-weight: 100;
+  letter-spacing: .09em;
+  text-align: left;
 }
 
 
