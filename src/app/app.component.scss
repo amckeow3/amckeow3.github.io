@@ -41,11 +41,13 @@ nav {
     line-height: 20px;
     text-decoration: none;
     color: white;
-    font-size: 1em;
+    font-size: 18px;
     font-weight: 100;
     background-color: transparent;
     //font-family: 'Courier New', Courier, monospace;
     font-family: 'Roboto', sans-serif;
+    color: white; 
+    text-shadow: 2px 2px 2px #80F0BE;
     //font-family: Consolas;
 }
 
@@ -145,13 +147,8 @@ h2 {
 
 .intro-outline {
   background-color: $mint-green;
-  border: solid $dark-green 3px;
-}
-
-.resume-outline {
-  border: solid $dark-green 3px;
-  color: $dark-green;
-  height: 40px;
+  border: solid $dark-green 4px;
+  padding: 0 8px;
 }
 
 
@@ -175,9 +172,10 @@ section {
   font-family: Consolas;
   color: $mint-green;
   font-size: 3em;
-  font-weight: 100;
+  font-weight: 800;
   letter-spacing: .09em;
   text-align: left;
+  //text-shadow: 2px 2px 2px #80F0BE;
 }
 
 
