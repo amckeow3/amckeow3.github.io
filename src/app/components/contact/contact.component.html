@@ -1,5 +1,17 @@
 <main>
-    <a class="contact-btn neon" href="mailto: adrianna_mckeown@live.com">
-        <span class="neon" style="background-color: #fffb0f;">Send Email</span></a>
-   
+    <!--<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">-->
+    <form>
+        <div class="form-group">
+            <input type="text" name="name" id="name" class="form-control" placeholder="Name*">
+        </div>
+        <div class="form-group">
+            <input type="text" name="email" id="email" class="form-control" placeholder="Email*">
+        </div>
+        <div class="form-group">
+            <textarea name="Text1" cols="45" rows="4" class="form-control" placeholder="Message*"></textarea>
+        </div>
+        <div class="form-group">
+            <button class="button" type="submit">Send Email</button>
+        </div>
+    </form>
 </main>
