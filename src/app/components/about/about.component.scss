@@ -62,16 +62,25 @@ img {
   text-align: left;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
   main {
     height: 100%;
   }
-  .about-section {
+  .about-container {
     display: block;
   }
 
+  img {
+   padding-top: 5px;
+    display: inline flex;
+    align-items: center;
+  }
+
   .image {
-    width: 30%;
-    height: 30%;
+    max-width: 20%;
+  }
+
+  .about-container {
+    margin-left: 0;
   }
 }

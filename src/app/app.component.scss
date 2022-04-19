@@ -57,7 +57,7 @@ nav {
   background: transparent;
   position: fixed;
   top: 50%;
-  left: 2%;
+  padding-left: 2%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -72,7 +72,7 @@ nav {
 }
 
 .fa {
-  //left: 30px;
+  //padding-left: 30px;
   height: 30px;
   width: 30px;
   border-radius: 50%;
@@ -117,25 +117,14 @@ nav {
 .hello {
     text-align: center;
     padding-top: 12em;
-    //padding-left: 5%;
-    //padding-right: 5%;
-    //padding-bottom: 12em;
 }
 
-h1 { 
-    //background-color: mix(#fff, #00fff2, 3%);
+h1 {
     color: white;
-    //font-size: 80px;
     font-size: 50px;
-    //font-family: "lato", sans-serif;
     font-family: Raleway;
-
     font-weight: 100;
     letter-spacing: .09em;
-    //text-align: left;
-    //justify-content: center;
-    //background: $pink;
-    line-height: 0.9;
 }
 
 h2 { 
@@ -157,7 +146,7 @@ h2 {
 /* SECTION FORMATTING */
 section {
     padding-top: 9em;
-    padding-left: 10%;
+    padding-left: 12%;
     padding-right: 12%;
 }
 
@@ -256,7 +245,7 @@ footer {
   padding: 5px 0;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
   .icon-bar {
     visibility: hidden;
   }
@@ -267,11 +256,12 @@ footer {
 }
 
 h1 {
-  font-size: 20px;
+  font-size: 30px;
+  line-height: 2em;
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 30px;
 }
 
     .navbar {
@@ -284,4 +274,11 @@ h2 {
         margin-right: 60px;
     }
 
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .section-header, .section-subheader {
+    text-align: center;
+  }
 }
