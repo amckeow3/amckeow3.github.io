@@ -1,7 +1,7 @@
 @import '../../../styles.scss';
 
 main {
-    background-color: $dark-purple;
+    background-color: $pink;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,8 +16,9 @@ main {
   }
 
   .project-folder {
-    outline: solid 2px #fc9ff7;
-    background: $dark-purple;
+    border: solid 4px white;
+    border-radius: 2%;
+    background: $pink;
     width: 300px;
     height: 200px;
     filter:alpha(opacity=100);
@@ -27,32 +28,35 @@ main {
     justify-content: center;
     justify-content: space-around;
     margin:  0px 10px;
+    //box-shadow: 1px 1px 2px $mint-green;
   }
   
   .other-proj-text {
-    font-family: "lato", sans-serif;
+    font-family: Raleway;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    
   }
   
   .other-proj-name {
+    font-family: Raleway;
     margin-top: 5px;
     margin-bottom: 5px;
-    color: #fc9ff7;
-    font-weight: 200;
-    letter-spacing: 5px;
+    color: white;
+    font-weight: 100;
+    letter-spacing: .09em;
   }
   
   .fa {
-   color: #fc9ff7;
+   color: white;
   }
   
   .featured-project {
-    color: #fc9ff7;
+    color: white;
     font-size: 15px;
     font-family: "lato", sans-serif;
     letter-spacing: .5px;
@@ -137,12 +141,12 @@ main {
   }
   
   .close {
-    color: rgb(255, 0, 0);
+    color: red;
     font-size: 50px;
     font-weight: bold;
     height: 60px;
     width: 60px;
-    background: none;
+    background: white;
   }
   
   .close:hover,
@@ -186,15 +190,17 @@ main {
   }
   
   .fa-github {
-    color: black;
+    color: white;
     margin: 0 10px;
-    background: #fc9ff7;
+    background-color: $mint-green;
+    border: solid $dark-green 2px;
   }
   
   .fa-external-link {
-    color: black;
+    color: white;
     margin-right: 10px;
-    background:#fc9ff7;
+    background-color: $mint-green;
+    border: solid $dark-green 3px;
   }
   
   .img {
@@ -211,7 +217,7 @@ main {
     align-items: center;
     transition: all 0.3s ease;
     background: none;
-    background-color: #fc9ff7;
+    background-color: $pink;
   }
 
 
